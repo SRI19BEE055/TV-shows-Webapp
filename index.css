@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-image: url("BG.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.border{
+    background-color: rgba(0,0,0, 0.4);
+    border: 3px solid #f1f1f1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    text-align: center;
+}
+.buttonContainer{
+    display: flex;
+    flex-direction: row;
+}
+.tabButton{
+    flex: 1;
+    height: 40px;
+    width: 150px;
+    background-color:rgba(0,0,0, 0.3);
+    font-size: 20px;
+    color: white;
+    border: 0;
+}
+.searchWrapper{
+    margin: 260px auto;
+}
+.searchWrapper,.historyTitle{
+    max-width: 500px;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+.historyTitle{
+    text-align: center;
+    margin: 225px auto;
+    font-size: 100px;
+    color: #c5fbfb;
+}
+
+.searchWrapper .search{
+    text-align: left;
+    background-color: white;
+    width: 100%;
+    border-radius: 100px;
+}
+
+.search .searchField{
+    height:55px ;
+    width: 100%;
+    outline:none;
+    border:none;
+    background-color: rgba(0,0,0, 0);
+    padding: 0px 0px 0px 20px;
+    font-size: 18px;
+}
+
+.suggestions li{
+    list-style: none;
+}
+
+.suggestions{
+    place-items: center;
+    position: fixed;
+    overflow-y:auto;
+    max-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+    top: 350px;
+    right: 0;
+    left: 0;
+    font-size: 30px;
+    color: white;
+    background-color: rgba(0,0,0, 0.6);
+    border: 1px solid #f1f1f1;
+}
+
+img{
+    height: 200px;
+    max-width:130px;
+    padding:10px 5px;
+}
